@@ -1,1 +1,34 @@
-<p>Hello world Ardin</p>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<div id="index_wrapper">
+    <h1>Ardin</h1>
+    <p><b><i>Ardin er sej</b></i></p>
+    <form id="chatForm">
+        <input type="text" id="usernameInput" placeholder="Enter your name">
+        <input type="text" id="roomnameInput" placeholder="Enter room name">
+        <button type="submit">Send</button>
+    </form>
+
+
+   
+ 
+
+    <script>
+        document.getElementById('chatForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const usernameInput = document.getElementById('usernameInput');
+            const username = usernameInput.value;
+            const roomnameInput = document.getElementById('roomnameInput');
+            const roomname = roomnameInput.value;
+
+            window.location.href = `./chat.html?roomId=${roomname}&username=${username}`;
+        });
+    </script>
+    <img width="200" src="https://i.ytimg.com/vi/-jwQxjZVGdo/maxresdefault.jpg">
+    <a href="./style_guide.html">link til style guide</a>
+    <a href="./chat.html">link til chat</a>
+</div>
