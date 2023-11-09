@@ -48,7 +48,7 @@ a {
     flex-direction: column-reverse;
     overflow-y: scroll;
     height: 76%;
-    background-image: url(https://static.wikia.nocookie.net/callofduty/images/c/c9/Settlement_Defense_Front_Triangle_Logo_IW.png/revision/latest?cb=20161208133149);
+    background-image: url("./background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgb(61, 61, 61);
