@@ -9,7 +9,6 @@ body {
 
 a {
     color: white
-    
 }
 
 #sent p {
@@ -44,18 +43,20 @@ a {
 }
 
 #root {
-    display:flex;
+    display: flex;
     flex-direction: column-reverse;
     overflow-y: scroll;
     height: 76%;
-    background-image: url("./background.png");
+    background-image: url(https://static.wikia.nocookie.net/callofduty/images/c/c9/Settlement_Defense_Front_Triangle_Logo_IW.png/revision/latest?cb=20161208133149);
     background-repeat: no-repeat;
     background-position: center;
     background-color: rgb(61, 61, 61);
+    width: 100%;
 
 }
+
 #chatsss {
-    display:flex;
+    display: flex;
     flex-direction: column-reverse;
     overflow-y: scroll;
 }
@@ -71,8 +72,20 @@ a {
     flex-direction: row;
 }
 
+@media only screen and (max-width: 600px) {
+    #wrapper {
+        max-width: 45%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #wrapper {
+        max-width: 20%;
+    }
+}
+
 #tilbage {
-    background-color: rgb(194, 184, 184);
+    background-color: rgb(0, 0, 0);
     color: black;
     padding: 8px;
     margin-top: 8px;
@@ -85,8 +98,6 @@ a {
 #wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 20%;
-
 }
 
 #send_message {
@@ -122,13 +133,23 @@ a {
     height: 100%;
     background-size: cover;
 }
+
 #info {
-  max-width: 50%;
-  display: flex;
-}
-#roomList {
+    max-width: 50%;
     display: flex;
 }
+
+#roomList {
+    display: flex;
+    max-width: 100%;
+    overflow-x: scroll;
+}
+
 #liste {
     padding-right: 10px;
+}
+
+#search-room {
+    margin-right: 20px;
+    box-shadow: 2cm;
 }
